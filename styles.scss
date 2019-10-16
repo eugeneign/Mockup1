@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+body {
+  margin: 0px;
+}
+
+header {
+  background-color: #FCC909;
+}
+
+.container {
+  width: 1000px;
+  margin: auto;
+}
+
+.header__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.header__logo {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+}
+
+.nav__item {
+  display: inline-block;
+  margin: 0px 10px;
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    border-bottom: 1px solid black;
+  }
+}
+
+.breadcrumbs {
+  background-color: #EBE8EB;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  a {
+    color: black;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.breadcrumbs__item {
+  display: inline;
+
+  &::after {
+    content: ">";
+    font-size: .5em;
+    margin: 0 .5em;
+    position: relative;
+    bottom: .25em;
+  }
+}
+
+.breadcrumbs__item--last::after {
+  display: none;
+}
+
+main .container {
+  padding-top: 20px;
+  display: flex;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+}
+
+.aside__nav {
+  color: black;
+  text-decoration: none;
+  margin: 10px;
+
+  &:hover {
+    color: white;
+    text-decoration: none;
+    background-color: black;
+  }
+}
+
+content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  min-width: 800px;
+}
+
+h1 {
+  margin-top: 0px;
+}
+
+.content__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+section {
+  background-color: #EBE8EB;
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.content__sticker {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 55px;
+  height: 35px;
+  color: white;
+  text-align: center;
+  border-radius: 2px;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: -20px;
+}
+
+.content__sticker--new {
+  background: #3cad67;
+}
+
+.content__sticker--sale {
+  background: #ad2222;
+}
+
+.content__sticker--hit {
+  background: #ce9b1a;
+}
+
+button {
+  text-decoration: none;
+  background-color: #FCC909;
+  color: black;
+  padding: 7px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+
+  &:hover {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 7px;
+    border-radius: 5px;
+  }
+}
+
+figure img {
+  width: 100%;
+}
+
+.content__price {
+  font-weight: bold;
+}
+
+.content__title {
+  text-align: center;
+}
